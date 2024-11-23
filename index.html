@@ -6,12 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello world</title>
     <style>
+      body{
+        margin: 0;
+        padding: 0;
+      }
+      .container{
+        margin: 1rem 2rem;
+      }
+      p{
+        margin: 1rem 0;
+      }
       h1{
         text-align: center;
       }
+      .mt-1{
+        margin-top: 1rem;
+      }
+      .mb-1{
+        margin-bottom: 1rem;
+      }
+      .mr-1{
+        margin-right: 1rem;
+      }
+      .ml-1{
+        margin-left: 1rem;
+      }
     </style>
   </head>
-  <body>
-    <h1>Welcome to my site.</h1>
+  <body class="container">
+    <h1>Welcome to Password Generator.</h1>
+    <p>Click the button to generate a number.</p>
+    <div class="mb-1">
+      <label for="password_length">
+        Password Length 
+        <input type="number" name="password_length" id="password_length" max="20" min="6" value="6">
+      </label>
+    </div>
+    <div>
+      <button>Generate password</button>
+    </div>
+    <p id="generated_password"></p>
+
+    <script>
+      let upperLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", 
+      "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+      let lowerLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", 
+      "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+      let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+      let specialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "=", "{", "}", "[", "]", "|", 
+      "\\", ":", ";", "\"", "'", "<", ">", "?", "/", "`", "~"]
+
+
+    </script>
   </body>
 </html>
