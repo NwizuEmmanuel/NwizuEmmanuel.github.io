@@ -1,2 +1,2 @@
 # NwizuEmmanuel Github Page
-Visti here htts://NwizuEmmanuel.github.io
+Visti here [NwizuEmmauel.github.io](https://NwizuEmmanuel.github.io)
